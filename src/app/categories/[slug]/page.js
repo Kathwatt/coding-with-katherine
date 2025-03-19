@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  return {
+  return {   
     title: `${params.slug.replaceAll("-", " ")} Blogs`,
     description: `Learn more about ${
       params.slug === "all" ? "web development" : params.slug
@@ -32,8 +32,7 @@ export async function generateMetadata({ params }) {
 }
 
 const CategoryPage = ({ params }) => {
-  // Separating logic to create list of categories from all blogs
-  const allCategories = ["all"] // Initialize with 'all' category
+  const allCategories = ["all"]
   allBlogs.forEach((blog) => {
     blog.tags.forEach((tag) => {
       const slugified = slug(tag)
@@ -43,13 +42,11 @@ const CategoryPage = ({ params }) => {
     })
   })
 
-  // Sort allCategories to ensure they are in alphabetical order
   allCategories.sort()
 
-  // Step 2: Filter blogs based on the current category (params.slug)
   const blogs = allBlogs.filter((blog) => {
     if (params.slug === "all") {
-      return true // Include all blogs if 'all' category is selected
+      return true
     }
     return blog.tags.some((tag) => slug(tag) === params.slug)
   })
@@ -61,7 +58,7 @@ const CategoryPage = ({ params }) => {
           #{params.slug}
         </h1>
         <span className="mt-2 inline-block">
-          Discover more categories and expand your knowledge!
+          Discover more categories!
         </span>
       </div>
       <Categories categories={allCategories} currentSlug={params.slug} />

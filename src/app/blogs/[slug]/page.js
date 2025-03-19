@@ -8,7 +8,6 @@ import Image from "next/image"
 import { notFound } from "next/navigation"
 
 export async function generateStaticParams() {
-  console.log(blogs)
   return blogs.map((blog) => ({ slug: blog.slug }))
 }
 
