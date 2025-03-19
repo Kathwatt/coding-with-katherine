@@ -9,12 +9,12 @@ export default function ContactForm() {
     >
       Hi, I’m {siteMetadata.author}, a dedicated developer specializing in
       JavaScript. <br></br>
-      You can email me at &nbsp;
+      Please email me at &nbsp;
       <a
         style={{ textDecoration: "underline" }}
         href={`mailto:${siteMetadata.email}`}
       >
-        {siteMetadata.email}
+        {siteMetadata.email}.
       </a>
     </form>
   )

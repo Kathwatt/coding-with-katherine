@@ -7,12 +7,12 @@ This repository contains a bit of information about my technological skills. I b
 
 ###  Clone the Repository  
 git clone https://github.com/Kathwatt/coding-with-katherine.git
-< br />
+###  Navigate to folder  
 cd coding-with-katherine
-### Run the follwing commands  
+### Install dependencies  
 npm install
-< br />
+### Run project
 npm run dev
-### View the project
+### View project
 Navigate to http://localhost:3000/
 
