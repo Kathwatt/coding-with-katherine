@@ -1,2 +1,2 @@
-# coding-with-katherine
-Little bit more about myself
+npm install
+npm run dev
