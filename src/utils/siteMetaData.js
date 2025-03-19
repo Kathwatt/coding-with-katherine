@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: "Blog",
   description: "A blog created with Next.js, React and Tailwind.css",
   language: "en-us",
-  theme: "light",
+  theme: "system",
   siteLogo: "/logo.png",
   socialBanner: "/banner-unsplash.jpg",
   email: "katwatt66@gmail.com",
